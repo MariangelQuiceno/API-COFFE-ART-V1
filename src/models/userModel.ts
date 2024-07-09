@@ -1,5 +1,4 @@
 import { RowDataPacket } from 'mysql2/promise';
-
 export interface Usuario extends RowDataPacket {
     nombre: string;
     correo_electronico: string;
@@ -13,12 +12,14 @@ export interface Usuario extends RowDataPacket {
     estado: 'Activo' | 'Inactivo';
 }
 
+// Empleado model
 export interface Empleado extends Usuario {
     empleado_id: number;
     admin_id?: number;
     local_id?: number;
 }
 
+// Producto model
 export interface Producto extends RowDataPacket {
     producto_id: number;
     nombre: string;
@@ -32,6 +33,7 @@ export interface Producto extends RowDataPacket {
     fecha_publicacion: Date;
 }
 
+// Local model
 export interface Local extends RowDataPacket {
     local_id: number;
     nombre: string;
@@ -40,6 +42,7 @@ export interface Local extends RowDataPacket {
     fecha_creacion: Date;
 }
 
+// Transaccion model
 export interface Transaccion extends RowDataPacket {
     transaccion_id: number;
     comprador_id: number;
@@ -52,6 +55,7 @@ export interface Transaccion extends RowDataPacket {
     precio_total: number;
 }
 
+// InformeFinanciero model
 export interface InformeFinanciero extends RowDataPacket {
     informe_id: number;
     mes: number;
@@ -64,6 +68,7 @@ export interface InformeFinanciero extends RowDataPacket {
     fecha_generacion: Date;
 }
 
+// Reporte model
 export interface Reporte extends RowDataPacket {
     reporte_id: number;
     comprador_id: number;
@@ -73,6 +78,7 @@ export interface Reporte extends RowDataPacket {
     comentario?: string;
 }
 
+// InformeGeneralSistema model
 export interface InformeGeneralSistema extends RowDataPacket {
     informe_general_sistema_id: number;
     total_usuarios: number;

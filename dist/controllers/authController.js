@@ -60,4 +60,3 @@ const login = (req, res) => {
     });
 };
 exports.login = login;
-//# sourceMappingURL=authController.js.map

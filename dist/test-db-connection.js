@@ -12,4 +12,3 @@ db_1.db.query(query, (err, results) => {
 });
 // Cerrar la conexión cuando haya terminado
 db_1.db.end();
-//# sourceMappingURL=test-db-connection.js.map

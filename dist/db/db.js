@@ -19,4 +19,3 @@ exports.db.connect((err) => {
     console.log('Conexión a la base de datos MySQL establecida');
 });
 exports.default = exports.db;
-//# sourceMappingURL=db.js.map

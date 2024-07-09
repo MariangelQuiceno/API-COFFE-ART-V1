@@ -25,4 +25,3 @@ db_1.db.connect((err) => {
         });
     }
 });
-//# sourceMappingURL=index.js.map
